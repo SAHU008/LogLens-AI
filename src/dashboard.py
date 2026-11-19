@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent
 ANOMALY_PATH = BASE_DIR / "data" / "processed" / "anomaly_results.csv"
 INCIDENT_PATH = BASE_DIR / "data" / "processed" / "incident_reports.csv"
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://loglens-ai-api.onrender.com"
 
 st.set_page_config(
     page_title="LogLens AI",
