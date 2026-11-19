@@ -160,7 +160,7 @@ if submitted:
 
     try:
         api_response = requests.post(
-            "http://127.0.0.1:8000/predict",
+            "https://loglens-ai-api.onrender.com/predict",
             json=payload,
             timeout=10
         )
@@ -202,7 +202,7 @@ if st.button("Refresh Prediction History"):
 
 try:
     response = requests.get(
-        "http://127.0.0.1:8000/history",
+        "https://loglens-ai-api.onrender.com/history",
         params={"limit": 100},
         timeout=10
     )
